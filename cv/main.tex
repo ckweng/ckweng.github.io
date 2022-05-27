@@ -1,0 +1,287 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeDevHeading}[1]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Chenkai Weng} \\ \vspace{1pt}
+    \small +1-224-307-3331 $|$ \href{mailto:ckweng@u.northwestern.edu}{ckweng@u.northwestern.edu} $|$ 
+    \href{https://carlweng.github.io}{carlweng.github.io}
+    %\href{https://www.linkedin.com/in/chenkai-weng/}{linkedin.com/in/chenkai-weng}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Research Interests}
+  \resumeSubHeadingListStart
+  \item{\small{My research interest lies in cryptography, with a focus on secure multi-party computation and zero-knowledge proofs. I have participated in projects related to the security of garbled circuits protocol, efficient generation of correlated oblivious transfer, private data analysis in healthcare systems and scalable interactive zero-knowledge proofs.}}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Northwestern University}{Evanston, IL}
+      {PhD in Computer Science; Advisor: Xiao Wang}{Sept. 2019 -- present}
+    \resumeSubheading
+      {Xidian University}{Xi'an, China}
+      {BSc in Information Security}{Sept. 2015 -- June 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Research Intern}{Remote}
+      {Microsoft Research}{May. 2021 -- Jul. 2021}
+      \resumeItemListStart
+        \resumeItem{Design and Develop secure multi-party computation and differential privacy applications for online conversion measurement.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Assistant}{Evanston, IL}
+      {Northwestern University}{Sept. 2020 -- May. 2021}
+      \resumeItemListStart
+        \resumeItem{Interactive zero-knowledge protocols for arbitrary boolean/arithmetic circuits and polynomials.}
+        \resumeItem{Correlated oblivious transfer based on vector oblivious linear evaluation.}
+        \resumeItem{Concrete security of the garbled circuit protocol.}
+        \resumeItem{Implementation and evaluation of MPC/ZK applications.}
+      \resumeItemListEnd
+
+     \resumeSubheading
+      {Teaching Assistant}{Evanston, IL}
+      {Northwestern University}{Sept. 2020 -- Dec. 2020}
+      \resumeItemListStart
+        \resumeItem{Introduction to Cryptography}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+    \resumeSubheading
+      {Security Engineering Intern}{Beijing, China}
+      {Alibaba Group}{July 2018 -- Jan. 2019}
+      \resumeItemListStart
+        \resumeItem{Survey on secure multi-party computation techniques.}
+        \resumeItem{Implementation of threshold encryption and digital signature schemes based on MPC.}
+        \resumeItem{Implementation of private set intersection protocol and order-preserving encryption schemes.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Publications}
+    %\resumeSubHeadingListStart
+\begin{enumerate}[leftmargin=0.20in]
+  \item
+          {\textbf{\small Constant-Overhead Zero-Knowledge for RAM Programs}} \\
+		{\small Nicholas Franzese, Jonathan Katz, Steve Lu, Rafail Ostrovsky, Xiao Wang, Chenkai Weng \vspace{-2pt}} \\
+		{\small ACM Conference on Computer and Communications Security (CCS), 2021}
+  \item
+          {\textbf{\small Efficient Conversions for Zero-Knowledge Proofs with Applications to Machine Learning}} \\
+		{\small Chenkai Weng, Kang Yang, Xiang Xie, Jonathan Katz, Xiao Wang \vspace{-2pt}} \\
+		{\small USENIX Security Symposium, 2021}
+  \item
+	  {\textbf{\small Efficient and Affordable Zero-Knowledge Proofs for Circuits and Polynomials over Any Field}} \\
+		{\small Kang Yang, Pratik Sarkar, Chenkai Weng, Xiao Wang \vspace{-2pt}} \\
+		{\small ACM Conference on Computer and Communications Security (CCS), 2021}
+  \item
+          {\textbf{\small Fast, Scalable, and Communication-Efficient Zero-Knowledge Proofs for Boolean and Arithmetic Circuits}} \\
+		{\small Chenkai Weng, Kang Yang, Jonathan Katz, Xiao Wang \vspace{-2pt}} \\
+		{\small IEEE Symposium on Security and Privacy (Oakland), 2021}
+  \item
+          {\textbf{\small Developing High Performance Secure Multi-Party Computation Protocols in Healthcare: A Case Study of Patient Risk Stratification}} \\
+		{\small Xiao Dong, David Randolph, Chenkai Weng, Abel Kho, Jennie Rogers, Xiao Wang \vspace{-2pt}} \\
+		{\small AMIA Informatics Summit, 2021}
+  \item
+          {\textbf{\small Ferret: Fast Extension for coRRElated oT with small communication}} \\
+		{\small Kang Yang, Chenkai Weng, Xiao Lan, Jiang Zhang, Xiao Wang\vspace{-2pt}} \\
+		{\small ACM Conference on Computer and Communications Security (CCS), 2020}
+  \item
+          {\textbf{\small Better Concrete Security for Half-Gates Garbling (in the Multi-Instance Setting)}} \\
+		{\small Chun Guo, Jonathan Katz, Xiao Wang, Chenkai Weng, Yu Yu\vspace{-2pt}} \\ 
+		{\small International Cryptology Conference (CRYPTO), 2020}
+\end{enumerate}
+          %\resumeItemListStart
+            %\resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+            %\resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+            %\resumeItem{Visualized GitHub data to show collaboration}
+            %\resumeItem{Used Celery and Redis for asynchronous tasks}
+          %\resumeItemListEnd
+      %\resumeProjectHeading
+          %{\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+          %\resumeItemListStart
+            %\resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+            %\resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+            %\resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+            %\resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+          %\resumeItemListEnd
+    %\resumeSubHeadingListEnd
+
+%-----------Talks-----------
+\section{Talks}
+    %\resumeSubHeadingListStart
+\begin{enumerate}[leftmargin=0.20in]
+  \item
+	  \small Aug. 2021 - "Efficient Conversions for Zero-Knowledge Proofs with Applications to Machine Learning", USENIX Security Symposium, 2021.
+  \item
+	  \small May. 2021 - "Wolverine: Fast, Scalable, and Communication-Efficient Zero-Knowledge Proofs for Boolean and Arithmetic Circuits", IEEE Security \& privacy (Oakland), 2021.
+  \item
+	  \small Mar. 2021 - "Fast, Scalable, and Communication-Efficient Zero-Knowledge Proofs", Security and privacy seminar at Duke Univeristy.
+  \item
+          \small Nov. 2020 - "Ferret: Fast Extension for coRRElated oT with small communication", ACM Conference on Computer and Communications Security (CCS), 2020.
+  \item
+          \small Aug. 2020 - "Better Concrete Security for Half-Gates Garbling (in the Multi-Instance Setting)", International Cryptology Conference (CRYPTO), 2020.
+\end{enumerate}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Software}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeDevHeading
+      {\small EMP library}
+		 \begin{enumerate}
+			 \item \small {[EMP-TOOL] Float-point circuits, utility functions}
+			 \item \small {[EMP-OT] Correlated-OT based on VOLE (The Ferret protocol)}
+			 \item \small {[EMP-ZK] Implementation of interactive zero-knowledge proof protocols. For the circuit model, it supports boolean and arithmetic circuits, and their conversions. It also supports proving degree-2 polynomial satisfiabilies.}
+		 \end{enumerate}
+    %\resumeDevHeading
+      %{\small Other contributions}
+      %\resumeItemListStart
+		 %\resumeItem{Implementation of zero-knowledge protocols for boolean and arithmetic circuits}
+      %\resumeItemListEnd
+    %\resumeDevHeading
+      %{\small Skills}
+      %\resumeItemListStart
+		 %\resumeItem{Programming language: C/C++, Python, Java}
+		 %\resumeItem{Developer tools: Git, Vim}
+      %\resumeItemListEnd
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
+
