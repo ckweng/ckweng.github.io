@@ -128,7 +128,9 @@
 %-----------EDUCATION-----------
 \section{Research Interests}
   \resumeSubHeadingListStart
-  \item{\small{My research interest lies in cryptography, with a focus on secure multi-party computation and zero-knowledge proofs. I have participated in projects related to VOLE-based interactive zero-knowledge proofs, the concrete security of garbled circuits protocol, efficient correlated oblivious transfer and private data aggregations.}}
+  \item{\small{Applied cryptography with a focus on secure multi-party computation and zero-knowledge proofs.
+    The design, analysis, and implementation of MPC (e.g., garbled circuits, oblivious transfer, homomorphic encryption, and secret sharing-based protocols) and ZKP protocols (VOLE-based ZK and non-interactive ZK).
+    The building of secure systems by applying cryptography-based privacy-enhancing techniques to various fields, including the database, networking, formal verification, machine learning, health care, and decentralized systems.}}
   \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------
@@ -144,24 +146,25 @@
 
 
 %-----------EXPERIENCE-----------
-\section{Experience}
+\section{Research \& Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
       {Research Assistant}{Evanston, IL}
       {Northwestern University}{Sept. 2020 -- Present}
       \resumeItemListStart
-        \resumeItem{Scalable and Efficient interactive zero-knowledge protocols based on VOLE.}
-        \resumeItem{Design of efficient VOLEs.}
-        \resumeItem{Concrete security of the garbled circuit protocol.}
-        \resumeItem{Design, implementation and evaluation of MPC/ZK applications.}
+        \resumeItem{Concrete security of the garbled circuits protocol: attack and fix.}
+        \resumeItem{Design of efficient cryptographic primitives: VOLE and OT protocols.}
+        \resumeItem{Design of scalable and efficient VOLE-ZK and MPC protocols.}
+        \resumeItem{Design, implementation and evaluation of secure systems with cryptography.}
       \resumeItemListEnd
 
     \resumeSubheading
       {AI Research Summer Associate}{New York, NY}
       {JPMorgan Chase}{Jun. 2023 -- Sept. 2023}
       \resumeItemListStart
-        \resumeItem{Research on MPC and ZK.}
+        \resumeItem{Privacy-preserving linear programming with applications to distributed portfolio optimization.}
+        \resumeItem{Communication-efficient multi-verifier ZKP protocol.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -182,7 +185,7 @@
       {Research Intern}{Remote}
       {Microsoft Research}{May. 2021 -- Jul. 2021}
       \resumeItemListStart
-        \resumeItem{Design and Develop secure multi-party computation and differential privacy applications for private aggregation.}
+        \resumeItem{Design and develop of private aggregation protocol from MPC and differential privacy.}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -203,11 +206,16 @@
         \resumeItem{Implementation of private set intersection protocol and order-preserving encryption schemes.}
       \resumeItemListEnd
 
+  \resumeSubHeadingListEnd
+
+\section{Teaching Experience}
+  \resumeSubHeadingListStart
+
      \resumeSubheading
       {Co-lecturer}{Evanston, IL}
       {Northwestern University}{Jan. 2023 -- Mar. 2023}
       \resumeItemListStart
-        \resumeItem{Advanced topics in cryptography: OT-extension, BGW, MPC-in-the-head, PSI.}
+        \resumeItem{Advanced topics in cryptography: OT-extension, BGW, MPC-in-the-head, PSI protocols.}
       \resumeItemListEnd
 
      \resumeSubheading
@@ -219,6 +227,15 @@
 
 
   \resumeSubHeadingListEnd
+
+\section{Awards \& Grants \& Fellowships}
+\begin{enumerate}
+  \item JPMorgan PhD Fellowship 2023.
+  \item Northwestern Terminal Year Fellowship 2023-24.
+    \item Runner-up for Best Paper Awards, CCS 2021.
+    \item PhD Student Research Award, Computer Science Department, Northwestern University, 2020-21.
+\end{enumerate}
+
 
 
 %-----------PROJECTS-----------
@@ -286,10 +303,30 @@
           %\resumeItemListEnd
     %\resumeSubHeadingListEnd
 
+%-----------Manuscripts-----
+\section{Preprints}
+    %\resumeSubHeadingListStart
+\begin{enumerate}[leftmargin=0.20in]
+  \item
+    {\textbf{\small Precio: Private Aggregate Measurement via Oblivious Shuffling}} \\
+		{\small F. Betül Durak, Chenkai Weng, Erik Anderson, Kim Laine, Melissa Chase \vspace{-2pt}}
+  \item 
+    {\textbf{\small Privacy-Preserving Regular Expression Matching using Nondeterministic Finite Automata}} \\
+		{\small Ning Luo, Chenkai Weng, Jaspal Singh, Gefei Tan, Ruzica Piskac, Mariana Raykova \vspace{-2pt}}
+  \item 
+    {\textbf{\small PDNS: A Fully Privacy-Preserving DNS}} \\
+		{\small Yunming Xiao, Chenkai Weng, Ruijie Yu, Peizhi Liu, Matteo Varvello, Aleksandar Kuzmanovic \vspace{-2pt}}
+
+\end{enumerate}
+
 %-----------Talks-----------
 \section{Talks}
     %\resumeSubHeadingListStart
 \begin{enumerate}[leftmargin=0.20in]
+  \item
+    \small May. 2023 - "SUPERPACK: Dishonest Majority MPC with Constant Online Communication", at Eurocrypt 2023 and NYU Crypto reading group.
+  \item
+    \small Apr. 2023 - "Efficient and Scalable Zero-Knowledge Proofs based on Vector Oblivious Linear Evaluation", at JPMorgan AlgoCRYPT Seminar.
   \item
 	  \small Nov. 2022 - "AntMan: Interactive Zero-Knowledge Proofs with Sublinear Communication", at ACM Conference on Computer and Communications Security (CCS), 2022.
   \item
@@ -310,16 +347,10 @@
 
 \section{Service}
 \begin{itemize}[leftmargin=0.15in, label={}]
-    \item \textbf{Conference}: external reviewer for CRYPTO 21 22 23, ITC 22, Asiacrypt 22, IEEE S\&P 23, PKC 23.
-    \item \textbf{Journal}: TDSC, TIFS, TOPS.
+  \item \textbf{Program committee}: AsiaCCS 2024.
+  \item \textbf{Conference}: CRYPTO 2021-23, ITC 2022, Asiacrypt 2022-23, IEEE S\&P (Oakland) 2023, PKC 2023.
+    \item \textbf{Journal}: IEEE TDSC, IEEE TIFS, IEEE TCBB, ACM TOPS, IACR JoC.
 \end{itemize}
-
-\section{Awards}
-\begin{enumerate}
-    \item Runner-up for Best Paper Awards, CCS 2021.
-    \item PhD Student Research Award, Computer Science Department, Northwestern University, 2020-2021.
-\end{enumerate}
-
 %
 %-----------PROGRAMMING SKILLS-----------
 \section{Software}
@@ -329,7 +360,12 @@
 		 \begin{enumerate}
              \item \small {[EMP-TOOL] Float-point arithmetic based on Boolean circuits. Cryptographic building blocks.}
 			 \item \small {[EMP-OT] Correlated-OT based on VOLE (The Ferret protocol).}
-			 \item \small {[EMP-ZK] Interactive zero-knowledge proof protocols. For the circuit model, it supports boolean and arithmetic circuits, and their conversions. It also supports proving degree-2 polynomial satisfiabilies.}
+			 \item \small {[EMP-ZK] Interactive zero-knowledge proof protocols based on VOLE.
+         \begin{itemize}
+          \item Circuit satisfiability: Arbitrary boolean and arithmetic circuits, and their conversions.
+          \item Polynomial satisfiability: Degree-2 polynomials.
+          \item RAM model: ZK table lookup.
+         \end{itemize} }
 		 \end{enumerate}
     %\resumeDevHeading
       %{\small Other contributions}
