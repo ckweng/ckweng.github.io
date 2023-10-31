@@ -14,7 +14,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 /*#main {margin-left: 120px}*/
 /* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+@media only screen and (max-width: 800px) {#main {margin-left: 0}}
 </style>
 <body class="w3-white">
 
@@ -61,7 +61,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif}
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-black w3-padding-16" id="about">
     <h2 class="w3-text-black">About</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <hr style="width:300px" class="w3-opacity">
     <p class="w3-large">
     I'm a fifth year PhD student at <a href="https://www.mccormick.northwestern.edu/computer-science/">Computer Science Department</a> of <a href="https://www.northwestern.edu/">Northwestern University</a>. My interest lies in Cryptography with a focus on Secure Multi-Party Computation and Zero-Knowledge Proofs.
 
@@ -191,16 +191,45 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif}
     <h2 class="w3-text-black">Talks</h2>
     <hr style="width:200px" class="w3-opacity">
     <!-- <br><br><h3 class="w3-text-black">Talks</h3> -->
-    <p class="w3-large" style="text-indent:0em"> May. 2023 - "SUPERPACK: Dishonest Majority MPC with Constant Online Communication", Eurocrypt 2023 <a href="https://www.youtube.com/watch?v=1bmnuV98a50">video</a>, NYU Crypto reading group <a href="https://cs.nyu.edu/crg/">link</a>, UPenn Security Seminar, CMU Cylab Crypto Seminar <a href="https://sites.google.com/view/crypto-seminar/home">link</a> <a href="https://www.youtube.com/watch?v=BL2WGoqx6pI">video</a>.<br></p>
-    <p class="w3-large" style="text-indent:0em"> Apr. 2023 - "Efficient and Scalable Zero-Knowledge Proofs based on Vector Oblivious Linear Evaluation", JPMorgan AlgoCRYPT Seminar. <br></p>
-    <p class="w3-large" style="text-indent:0em"> Nov. 2022 - "AntMan: Interactive Zero-Knowledge Proofs with Sublinear Communication", CCS 2022. <br></p>
-    <p class="w3-large" style="text-indent:0em"> Aug. 2022 - "Efficient Interactive Zero Knowledge Proof  Based on VOLE", CS talk at Yale. <a href="https://cpsc.yale.edu/event/cs-talk-chenkai-weng">link</a><br></p>
-    <p class="w3-large" style="text-indent:0em"> Nov. 2021 - "QuickSilver: Efficient and Affordable Zero-Knowledge Proofs for Circuits and Polynomials over Any Field", CCS 2021. <a href="https://dl.acm.org/doi/abs/10.1145/3460120.3484556">link (video)</a><br></p>
-    <p class="w3-large" style="text-indent:0em"> Aug. 2021 - "Mystique: Efficient Conversions for Zero-Knowledge Proofs with Applications to Machine Learning", USENIX Security 2021. <a href="https://www.usenix.org/conference/usenixsecurity21/presentation/weng">link (video)</a><br></p>
-    <p class="w3-large" style="text-indent:0em"> May. 2021 - "Wolverine: Fast, Scalable, and Communication-Efficient Zero-Knowledge Proofs for Boolean and Arithmetic Circuits", IEEE S&P (Oakland) 2021. <a href="https://www.youtube.com/watch?v=H7R8_7jkzsI">talk preview</a> <a href="https://www.youtube.com/watch?v=sTX0edi3Jvw">full video</a><br></p>
-    <p class="w3-large" style="text-indent:0em"> Mar. 2021 - "Fast, Scalable, and Communication-Efficient Zero-Knowledge Proofs", Security and privacy seminar at Duke Univeristy. <a href="https://www.cs.duke.edu/events/node/3979">link</a><br></p>
-    <p class="w3-large" style="text-indent:0em"> Nov. 2020 - "Ferret: Fast Extension for coRRElated oT with small communication", CCS 2020. <a href="https://dl.acm.org/doi/abs/10.1145/3372297.3417276">video</a><br></p>
-    <p class="w3-large" style="text-indent:0em"> Aug. 2020 - "Better Concrete Security for Half-Gates Garbling (in the Multi-Instance Setting)", CRYPTO 2020. <a href="https://iacr.org/submit/files/slides/2020/crypto/crypto2020/199/slides.pdf">slide</a>, <a href="https://www.youtube.com/watch?v=MKGqA0K9d8M">video</a><br></p>
+    <ol class="w3-large">
+        <li>
+    <p class="w3-large" style="text-indent:0em"> SUPERPACK: Dishonest Majority MPC with Constant Online Communication<br>
+        -- Eurocrypt 2023 <a href="https://www.youtube.com/watch?v=1bmnuV98a50">link</a><br>
+        -- NYU Crypto reading group <a href="https://cs.nyu.edu/crg/">link</a><br>
+        -- UPenn Security Seminar <br>
+        -- CMU Cylab Crypto Seminar <a href="https://sites.google.com/view/crypto-seminar/home">link</a> <a href="https://www.youtube.com/watch?v=BL2WGoqx6pI">video</a></p>
+	    </li>
+
+        <li>
+    <p class="w3-large" style="text-indent:0em"> AntMan: Interactive Zero-Knowledge Proofs with Sublinear Communication, CCS 2022 <br></p>
+	    </li>
+
+        <li>
+    <p class="w3-large" style="text-indent:0em"> QuickSilver: Efficient and Affordable Zero-Knowledge Proofs for Circuits and Polynomials over Any Field, CCS 2021 <a href="https://dl.acm.org/doi/abs/10.1145/3460120.3484556">link & video</a><br></p>
+	    </li>
+
+        <li>
+    <p class="w3-large" style="text-indent:0em"> Mystique: Efficient Conversions for Zero-Knowledge Proofs with Applications to Machine Learning, USENIX Security 2021 <a href="https://www.usenix.org/conference/usenixsecurity21/presentation/weng">link & video</a><br></p>
+	    </li>
+
+        <li>
+    <p class="w3-large" style="text-indent:0em"> Wolverine: Fast, Scalable, and Communication-Efficient Zero-Knowledge Proofs for Boolean and Arithmetic Circuits, IEEE S&P (Oakland) 2021 <a href="https://www.youtube.com/watch?v=H7R8_7jkzsI">talk preview</a> <a href="https://www.youtube.com/watch?v=sTX0edi3Jvw">full video</a><br></p>
+	    </li>
+
+        <li>
+    <p class="w3-large" style="text-indent:0em"> Efficient and Scalable Zero-Knowledge Proofs Based on Vector Oblivious Linear evaluation<br>
+        -- Security and privacy seminar at Duke Univeristy <a href="https://drupal.cs.duke.edu/events/archive?field_event_series_target_id=All&keys=&page=8">link</a><br>
+        -- CS talk at Yale University <a href="https://cpsc.yale.edu/event/cs-talk-chenkai-weng">link</a><br>
+        -- JPMorgan AlgoCRYPT Seminar <br></p>
+	    </li>
+
+        <li>
+    <p class="w3-large" style="text-indent:0em"> Ferret: Fast Extension for coRRElated oT with small communication, CCS 2020 <a href="https://dl.acm.org/doi/abs/10.1145/3372297.3417276">video</a><br></p>
+	    </li>
+
+        <li>
+    <p class="w3-large" style="text-indent:0em"> Better Concrete Security for Half-Gates Garbling (in the Multi-Instance Setting), CRYPTO 2020 <a href="https://iacr.org/submit/files/slides/2020/crypto/crypto2020/199/slides.pdf">slide</a>, <a href="https://www.youtube.com/watch?v=MKGqA0K9d8M">video</a><br></p>
+            </li>
     </div><br>
 
 
