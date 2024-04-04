@@ -15,6 +15,35 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif}
 /*#main {margin-left: 120px}*/
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 800px) {#main {margin-left: 0}}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+  .personal{
+  display: flex;
+  align-items: center;
+  }
+
+  span {padding: 5px}
 </style>
 <body class="w3-white">
 
@@ -52,25 +81,33 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif}
 <!-- Page Content -->
 <div class="w3-left w3-padding-large" id="main">
   <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-white" id="home">
-    <h3 class="w3-xxlarge"><span class="w3-hide-small">Chenkai Weng</span></h3>
+  <!--<header class="w3-container w3-padding-32 w3-white" id="home">
+    <h3 class="w3-xxlarge" id="engname"><span class="w3-hide-small">Chenkai Weng</span></h3>
     <p>翁晨凯</p>
     <img src="./pic/portrait.jpeg" class="w3-image" width="136">
-  </header>
+  </header>-->
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-black w3-padding-16" id="about">
-    <h2 class="w3-text-black">About</h2>
-    <hr style="width:300px" class="w3-opacity">
-    <p class="w3-large">
-    I'm a fifth year PhD student at <a href="https://www.mccormick.northwestern.edu/computer-science/">Computer Science Department</a> of <a href="https://www.northwestern.edu/">Northwestern University</a>. My interest lies in Cryptography with a focus on Secure Multi-Party Computation and Zero-Knowledge Proofs.
-
-    My advisor is <a href="https://wangxiao1254.github.io/">Xiao Wang</a>.
-    <br><br>I received my Bechelor degree from Xidian University in 2019.
-    <br><br>[<a href="https://ckweng.github.io/cv.pdf">CV</a>]
+  <div class="personal">
+    <img class="portrait2" src="./pic/portrait.jpeg" width="120">
+    <span><h5>Chenkai Weng (翁晨凯)</h5> <br>Department of Computer Science, Northwestern University
+    <br>[<a href="https://ckweng.github.io/cv.pdf">CV</a>]
           [<a href="https://ckweng.github.io/rs.pdf">Research Statement</a>]
           [<a href="https://scholar.google.com/citations?user=pCsgMvgAAAAJ&hl=en">Google Scholar</a>]
           [<a href="https://dblp.org/pid/251/1580.html">DBLP</a>]<br><br>
+
+        </span>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-black w3-padding-16" id="about">
+    <h3 class="w3-text-black">About</h3>
+    <!--<hr style="width:300px" class="w3-opacity">-->
+    <p class="w3-large">
+    I'm a fifth year PhD student at <a href="https://www.northwestern.edu/">Northwestern University</a>. My advisor is Professor <a href="https://wangxiao1254.github.io/">Xiao Wang</a>. 
+          <br>
+    My interest lies in Cryptography with a focus on Secure Multi-Party Computation and Zero-Knowledge Proofs.
+            <br>
+I'm a recipient of <a href="https://www.jpmorgan.com/technology/artificial-intelligence/research-awards/phd-fellowship-2023">JPMorgan PhD Fellowship</a>.
     
     <!-- Testimonials -->
     <!-- <h3 class="w3-text-black">Education</h3> -->
@@ -86,6 +123,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif}
     <p class="w3-large" style="text-indent:7em"> 2018 - Intern of <a href="https://alibaba-gemini-lab.github.io/">Gemini Lab</a>, Alibaba Group. (Mentor: Cheng Hong)</p> -->
 
     <!-- Testimonials -->
+            <!--
     <h3 class="w3-text-black">Experiences</h3>  
     <p class="w3-large" style="text-indent:0em"> 2023 - Summer associate at JPMorgan Chase (Manager: Antigoni Polychroniadou)<br></p>
     <p class="w3-large" style="text-indent:0em"> 2022 - Research Intern at <a href="https://chainlinklabs.com/">Chainlink Labs</a>, (Manager: <a href="https://malkhi.com/">Dahlia Malkhi</a>)<br></p>
@@ -93,18 +131,21 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif}
     <p class="w3-large" style="text-indent:0em"> 2021 - Research intern at Microsoft Research (Manager: <a href="https://www.microsoft.com/en-us/research/people/melissac/">Melissa Chase</a>)<br></p>
     <p class="w3-large" style="text-indent:0em"> 2018 - Intern at Gemini Lab, Alibaba Group (Manager: Cheng Hong)</p>
     <p class="w3-large" style="text-indent:0em"> 2017 - Undergraduate research (Mentor: <a href="https://web.xidian.edu.cn/jfwang/">Jianfeng Wang</a>)<br><br>
+-->
 
 
+            <!--
     <h3 class="w3-text-black">Awards</h3>  
     <p class="w3-large" style="text-indent:0em"> 2023 - JPMorgan PhD Fellowship <a href="https://www.jpmorgan.com/technology/artificial-intelligence/research-awards/phd-fellowship-2023">(link)</a><br></p>
     <p class="w3-large" style="text-indent:0em"> 2023 - Northwestern Terminal Year Fellowship<br></p>
+-->
   <!-- End About Section -->
   </div>
  
   <!-- Portfolio Section -->
   <div class="w3-padding-16 w3-content" id="pub">
-    <h2 class="w3-text-black">Publications</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <h3 class="w3-text-black">Publications</h3>
+    <!--<hr style="width:200px" class="w3-opacity">-->
 
     <ol class="w3-large">
 	    <li>
@@ -115,7 +156,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif}
 	    <li>
     <p class="w3-large"><b>Privacy-Preserving Regular Expression Matching using TNFA</b><br>
     Ning Luo, Chenkai Weng, Jaspal Singh, Gefei Tan, Mariana Raykova, Ruzica Piskac<br>
-    ESORICS 2024</p>
+    ESORICS 2024 <a href="https://eprint.iacr.org/2023/643">[eprint (full version)]</a></p>
 	    </li>
 	    <li>
     <p class="w3-large"><b>ZKSQL: Verifiable and Efficient Query Evaluation with Zero-Knowledge Proofs</b><br>
@@ -124,7 +165,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif}
 	    </li>
 	    <li>
     <p class="w3-large"><b>SUPERPACK: Dishonest Majority MPC with Constant Online Communication</b><br>
-    Daniel Escudero, Vipul Goyal, Antigoni Polychroniadou, Yifan Song, Chenkai Weng<br>
+    (*alphabetical order) Daniel Escudero, Vipul Goyal, Antigoni Polychroniadou, Yifan Song, Chenkai Weng<br>
     Eurocrypt 2023 <a href="https://eprint.iacr.org/2023/307">[eprint]</a> <a href="https://github.com/ckweng/SuperPack">[code]</a></p>
 	    </li>
 	    <li>
@@ -139,7 +180,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif}
 	    </li>
 	    <li>
     <p class="w3-large"><b>Constant-Overhead Zero-Knowledge for RAM Programs</b><br>
-    Nicholas Franzese, Jonathan Katz, Steve Lu, Rafail Ostrovsky, Xiao Wang, Chenkai Weng<br>
+    (*alphabetical order) Nicholas Franzese, Jonathan Katz, Steve Lu, Rafail Ostrovsky, Xiao Wang, Chenkai Weng<br>
                 CCS 2021 <a href="https://eprint.iacr.org/2021/979">[eprint]</a> <a href="https://github.com/emp-toolkit/emp-zk/tree/master/emp-zk/extensions/ram-zk">[code]</a></p>
 	    </li>
 	    <li>
@@ -169,7 +210,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif}
 	    </li>
 	    <li>
     <p class="w3-large"><b>Better Concrete Security for Half-Gates Garbling (in the Multi-Instance Setting)</b><br>
-    Chun Guo, Jonathan Katz, Xiao Wang, Chenkai Weng, Yu Yu<br>
+    (*alphabetical order) Chun Guo, Jonathan Katz, Xiao Wang, Chenkai Weng, Yu Yu<br>
     CRYPTO 2020 <a href="https://eprint.iacr.org/2019/1168">[eprint]</a> <a href="https://www.youtube.com/watch?v=MKGqA0K9d8M">[video]</a></p>
 	    </li>
   <!-- End Portfolio Section -->
@@ -177,8 +218,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif}
 
   <!-- Portfolio Section -->
   <div class="w3-padding-16 w3-content" id="manu">
-    <h2 class="w3-text-black">Manuscripts</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <h3 class="w3-text-black">Manuscripts</h3>
+    <!--<hr style="width:200px" class="w3-opacity">-->
 
     <ol class="w3-large">
 	    <li>
@@ -187,17 +228,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif}
     <a href="https://eprint.iacr.org/2021/1490">[eprint]</a></p>
 	    </li>
 	    <li>
-    <p class="w3-large"><b>Privacy-Preserving Regular Expression Matching using Nondeterministic Finite Automata</b><br>
-    Ning Luo, Chenkai Weng, Jaspal Singh, Gefei Tan, Ruzica Piskac, Mariana Raykova<br>
-    <a href="https://eprint.iacr.org/2023/643">[eprint]</a></p>
-	    </li>
-	    <li>
     <p class="w3-large"><b>An Efficient ZK Compiler from SIMD Circuits to General Circuits</b><br>
     Dung Bui, Haotian Chu, Geoffroy Couteau, Xiao Wang, Chenkai Weng, Kang Yang, Yu Yu<br>
     <a href="https://eprint.iacr.org/2023/1610">[eprint]</a></p>
 	    </li>
   </div>
-
+<!--
   <div class="w3-padding-16 w3-content" id="poster">
     <h2 class="w3-text-black">Posters and Demos</h2>
     <ol class="w3-large">
@@ -207,10 +243,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif}
     SIGCOMM 2023 <a href="https://dl.acm.org/doi/abs/10.1145/3603269.3610860">[link]</a></p>
 	    </li>
       </div>
-
+-->
   <div class="w3-padding-16 w3-content w3-text-black" id="talks">
-    <h2 class="w3-text-black">Invited Talks</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <h3 class="w3-text-black">Invited Talks</h3>
+    <!--<hr style="width:200px" class="w3-opacity">-->
     <!-- <br><br><h3 class="w3-text-black">Talks</h3> -->
     <ol class="w3-large">
         <li>
@@ -233,8 +269,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif}
 
   <!-- Contact Section -->
   <div class="w3-padding-16 w3-content w3-text-black" id="contact">
-    <h2 class="w3-text-black">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <h3 class="w3-text-black">Contact Me</h3>
+    <!--<hr style="width:200px" class="w3-opacity">-->
 
     <div class="w3-section">
       <p class="w3-large">Address: 3124 Seeley Mudd, 2233 Tech Dr, Evanston, IL, 60208</p>
